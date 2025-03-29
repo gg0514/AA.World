@@ -1,0 +1,18 @@
+
+
+1) Desktop와 Android 프로젝트는 실행프로젝트이다.
+
+2) Desktop 프로젝트없이 Android 프로젝트만 있으면, Avalonia Xaml Preview 기능이 비활성화된다.
+
+3) Visual Studio의 Hot Reload가 런타임에 소스 수정 결과를 반영한다면, 
+   Avalonia UI의 Compiled Binding은 디자인타임에 소스 수정 결과를 반영한다.
+
+4) Compiled Binding을 가능케 하려면, x:DataType를 설정하여 DataContext의 타입을 명시해야한다.
+
+5) Design.DataContext를 추가하여 디자인타임의 DataContext를 명시해야 한다.
+
+6) 실행프로젝트는 라이브러리프로젝트를 포함하고, 빌드를 리드한다.
+
+7) Directory.Build.props 파일은 크로스플랫폼 프로젝트 공통속성을 관리한다.
+
+

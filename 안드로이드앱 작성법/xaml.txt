@@ -1,0 +1,33 @@
+
+
+** Xaml Preview를 위한 최소한의 xaml
+
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AA.Views.MainView" >
+	
+</UserControl>
+
+
+
+
+** Design-Time Binding를 위한 최소한의 xaml
+
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:vm="clr-namespace:AA.ViewModels"
+             x:Class="AA.Views.MainView"
+             x:DataType="vm:MainViewModel">
+	
+  <Design.DataContext>
+    <vm:MainViewModel />
+  </Design.DataContext>
+
+  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+</UserControl>

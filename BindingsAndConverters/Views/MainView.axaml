@@ -1,0 +1,34 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:converters="clr-namespace:BindingConvertersExample.Converters"
+             xmlns:vm="clr-namespace:BindingConvertersExample.ViewModels"
+             x:Class="BindingConvertersExample.Views.MainView"
+             x:DataType="vm:MainViewModel">
+
+	<Design.DataContext>
+		<vm:MainViewModel />
+	</Design.DataContext>
+
+	<UserControl.Resources>
+		<converters:BirthdateToAgeConverter x:Key="BirthdateToAgeConverter"/>
+		<converters:AgeToPluralConverter x:Key="AgeToPluralConverter"/>
+	</UserControl.Resources>
+
+
+	<Panel VerticalAlignment="Center" HorizontalAlignment="Center">
+		<StackPanel Spacing="10">
+			<TextBlock FontWeight="Bold">Enter your date of birth day.</TextBlock>
+			<DatePicker SelectedDate="{Binding Age, Converter={StaticResource BirthdateToAgeConverter}, Mode=OneWayToSource}"/>
+			<TextBlock>
+				<Run>Your age is </Run>
+				<Run Text="{Binding Age}"/>
+				<Run>year</Run>
+				<Run Text="{Binding Age, Converter={StaticResource AgeToPluralConverter}, Mode=OneWay}"/>
+				<Run>old today.</Run>
+			</TextBlock>
+		</StackPanel>
+	</Panel>
+</UserControl>
