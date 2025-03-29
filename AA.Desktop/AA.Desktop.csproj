@@ -15,6 +15,7 @@
 
   <ItemGroup>
 	  <!--<ProjectReference Include="..\BindingsAndConverters\BindingsAndConverters.csproj" />-->
-	  <ProjectReference Include="..\ButtonCustomize\ButtonCustomize.csproj" />
+	  <!--<ProjectReference Include="..\ButtonCustomize\ButtonCustomize.csproj" />-->
+	  <ProjectReference Include="..\SimpleToDoList\SimpleToDoList.csproj" />
   </ItemGroup>
 </Project>

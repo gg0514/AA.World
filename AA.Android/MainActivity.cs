@@ -10,8 +10,8 @@ using Avalonia.Android;
 //using AndAva;
 
 //using BindingConvertersExample;
-using ButtonCustomize;
-
+//using ButtonCustomize;
+using SimpleToDoList;
 
 
 namespace AA.Android;

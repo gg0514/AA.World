@@ -1,12 +1,20 @@
 
 1) Desktop 프로젝트를 Xaml 라이브러리 프로젝트로 변환시킨다.
 
+
 2) Desktop 프로젝트의 csproj 파일에서 다음 항목을 삭제한다.
 
    <OutputType>WinExe</OutputType>  
    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
 
-3) Desktop 프로젝트의 App.axaml.cs 파일에서 다음 항목을 추가한다.
+
+3) Desktop 프로젝트의 csproj 파일에서 다음 항목을 수정한다.
+   (Avalonia 패키지의 버전명을 Directory.Build.props 파일 공통속성을 따른다.)
+ 
+   <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+
+
+4) Desktop 프로젝트의 App.axaml.cs 파일에서 다음 항목을 추가한다.
    (Xaml 라이브러리 프로젝트의 시작은 UserControl 컨트롤이다.)
 
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
@@ -17,6 +25,6 @@
             };
         }
 
-4) UserControl 컨트롤이 없으면 Window 컨트롤 파일에서 분리한다.
+5) UserControl 컨트롤이 없으면 Window 컨트롤 파일에서 분리한다.
    (Xaml 파일을 작성하고, xaml.cs 파일도 작성한다.)
 

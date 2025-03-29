@@ -1,17 +1,9 @@
-﻿using System;
-using Avalonia;
+﻿using Avalonia;
+using System;
 
-//using AA;
-//using AAva;
-//using AndAva;
+namespace SimpleToDoList;
 
-//using BindingConvertersExample;
-//using ButtonCustomize;
-using SimpleToDoList;
-
-namespace AA.Desktop;
-
-class Program
+sealed class Program
 {
     // Initialization code. Don't use any Avalonia, third-party APIs or any
     // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
@@ -26,5 +18,4 @@ class Program
             .UsePlatformDetect()
             .WithInterFont()
             .LogToTrace();
-
 }
