@@ -1,0 +1,10 @@
+
+1. .csproj 파일 이름 변경
+
+2. .csproj 파일 내부의 <AssemblyName> 또는 <RootNamespace> 수정
+
+3. 코드 내 네임스페이스 변경 (선택사항)
+
+4. 솔루션 파일(.sln) 파일 내용 수정
+
+   -> Visual Studio에서 프로젝트 삭제하고 다시 로드하면 자동 수정됨.

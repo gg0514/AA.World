@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace AndAva.ViewModels;
+namespace ViewModelLocator.ViewModels;
 
 public class ViewModelBase : ObservableObject
 {

@@ -1,6 +1,6 @@
 ﻿using Avalonia.Controls;
 
-namespace AndAva.Views;
+namespace ViewModelLocator.Views;
 
 public partial class MainView : UserControl
 {

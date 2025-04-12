@@ -1,12 +1,12 @@
-﻿using AndAva.ViewModels;
-using AndAva.Views;
+﻿using ViewModelLocator.ViewModels;
+using ViewModelLocator.Views;
 
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
 
-namespace AndAva;
+namespace ViewModelLocator;
 
 public partial class App : Application
 {

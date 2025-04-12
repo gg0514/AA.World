@@ -14,7 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <ProjectReference Include="..\AAva\AAva.csproj" />
+	  <ProjectReference Include="..\AA\AA.csproj" />
+	  <ProjectReference Include="..\BindingsAndConverters\BindingsAndConverters.csproj" />
 	  <ProjectReference Include="..\ButtonCustomize\ButtonCustomize.csproj" />
 	  <ProjectReference Include="..\SimpleToDoList\SimpleToDoList.csproj" />
+	  <ProjectReference Include="..\ViewModelLocator\ViewModelLocator.csproj" />
   </ItemGroup>
 </Project>
