@@ -2,15 +2,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:ViewModelLocator.ViewModels"
+             xmlns:local="using:ViewModelLocator"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="ViewModelLocator.Views.MainView"
-             x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
+			 x:DataType="local:ViewModelLocator">
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+	<UserControl.DataContext>
+		<Binding Path="MainViewModel" Source="{StaticResource locator}" />
+	</UserControl.DataContext>
+
+	<StackPanel Margin="20">
+		<TextBlock Text="{Binding MainViewModel.Greeting}" FontSize="24" />
+	</StackPanel>
 </UserControl>

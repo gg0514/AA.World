@@ -3,6 +3,15 @@
 
 2. .csproj 파일 내부의 <AssemblyName> 또는 <RootNamespace> 수정
 
+AssemblyName 항목이 .csproj에 없다면
+기본값으로 .csproj 파일 이름이 어셈블리 이름으로 사용됨.
+즉, MyProject.csproj라면 MyProject.dll 또는 MyProject.exe로 빌드됨.
+
+* 보너스: RootNamespace도 같은 원리야
+파일명과 동일한 네임스페이스가 기본으로 사용됨
+예: MyApp.csproj이면 기본 네임스페이스도 MyApp
+
+
 3. 코드 내 네임스페이스 변경 (선택사항)
 
 4. 솔루션 파일(.sln) 파일 내용 수정

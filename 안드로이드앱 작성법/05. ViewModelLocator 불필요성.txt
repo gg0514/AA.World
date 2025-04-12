@@ -1,0 +1,18 @@
+
+# ViewModelLocator의 기원 
+
+ViewModelLocator는 주로 WPF 및 Silverlight에서 MVVM 패턴을 구현할 때 널리 사용된 패턴입니다. 
+특히 MVVM 프레임워크(예: MVVM Light, Prism)에서 뷰와 뷰모델을 느슨하게 연결하기 위해 사용되었습니다. 
+하지만 AvaloniaUI는 WPF와 달리 더 현대적이고 간소화된 프레임워크로, ViewModelLocator를 필수로 요구하지 않습니다.
+
+# 디자인 타임에서의 사용
+
+ViewModelLocator를 사용하여 Design.IsDesignMode로 디자인 타임과 런타임을 구분하는 방식은 가능하지만, 
+AvaloniaUI에서는 d:DataContext 또는 Design.DataContext를 통해 디자인 타임 데이터를 직접 지정하는 방식이 더 간단하고 직관적입니다. 
+이는 ViewModelLocator를 유지보수해야 하는 추가 복잡성을 줄여줍니다.
+
+
+# Avalonia 커뮤니티의 관행
+
+AvaloniaUI 문서와 커뮤니티(예: GitHub 이슈, Discord)에서는 ViewModelLocator보다 XAML 기반의 디자인 타임 데이터 제공이나 코드 비하인드에서 디자인 타임 데이터를 설정하는 방식을 더 자주 볼 수 있습니다. ViewModelLocator는 특정 WPF 스타일의 프로젝트나 복잡한 DI 통합이 필요한 경우에만 선택적으로 사용됩니다.
+결론적으로, ViewModelLocator를 디자인 타임 뷰모델 구분에 사용하는 것은 비표준적이며, AvaloniaUI에서는 더 간단한 대안이 일반적입니다.

@@ -5,9 +5,11 @@ using Avalonia;
 //using AAva;
 //using AndAva;
 
-using BindingConvertersExample;
+//using BindingConvertersExample;
 //using ButtonCustomize;
 //using SimpleToDoList;
+
+//using ViewModelLocator;
 
 namespace AA.Desktop;
 
@@ -22,7 +24,7 @@ class Program
 
     // Avalonia configuration, don't remove; also used by visual designer.
     public static AppBuilder BuildAvaloniaApp()
-        => AppBuilder.Configure<App>()
+        => AppBuilder.Configure<ViewModelLocator.App>()
             .UsePlatformDetect()
             .WithInterFont()
             .LogToTrace();
