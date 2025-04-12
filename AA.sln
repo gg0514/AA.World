@@ -8,6 +8,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.Android", "AA.Android\AA.Android.csproj", "{6C2D745C-AFEF-4EFF-838F-208A4C2BB7A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AA.Desktop", "AA.Desktop\AA.Desktop.csproj", "{30EBAA62-3ED3-4916-B7F9-4595A96DDCEC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{93019EE3-01B7-47B4-806A-FF9980A77FBD} = {93019EE3-01B7-47B4-806A-FF9980A77FBD}
+		{FFB6E328-E818-4E27-B0B6-0F7FFF32127E} = {FFB6E328-E818-4E27-B0B6-0F7FFF32127E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AAva", "AAva\AAva.csproj", "{5FFFFEC8-60B0-404C-872A-E3DEC9F8132A}"
 EndProject
@@ -19,9 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonCustomize", "ButtonCu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "안드로이드앱 작성법", "안드로이드앱 작성법", "{4DE777A8-358E-4D1F-AEE3-C1A9AFE4E070}"
 	ProjectSection(SolutionItems) = preProject
-		안드로이드앱 작성법\Desktop 프로젝트 추가방법.txt = 안드로이드앱 작성법\Desktop 프로젝트 추가방법.txt
-		안드로이드앱 작성법\xaml.txt = 안드로이드앱 작성법\xaml.txt
-		안드로이드앱 작성법\크로스플랫폼 원리.txt = 안드로이드앱 작성법\크로스플랫폼 원리.txt
+		안드로이드앱 작성법\00. 크로스플랫폼 원리.txt = 안드로이드앱 작성법\00. 크로스플랫폼 원리.txt
+		안드로이드앱 작성법\01. Desktop 프로젝트 추가방법.txt = 안드로이드앱 작성법\01. Desktop 프로젝트 추가방법.txt
+		안드로이드앱 작성법\02. Design Time Binding.txt = 안드로이드앱 작성법\02. Design Time Binding.txt
+		안드로이드앱 작성법\03. 프로젝트 종속성 확인.txt = 안드로이드앱 작성법\03. 프로젝트 종속성 확인.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoList", "SimpleToDoList\SimpleToDoList.csproj", "{CF786975-19FD-4ED8-8193-FEAC5AE9D5C2}"

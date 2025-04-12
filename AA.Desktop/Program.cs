@@ -5,9 +5,9 @@ using Avalonia;
 //using AAva;
 //using AndAva;
 
-//using BindingConvertersExample;
+using BindingConvertersExample;
 //using ButtonCustomize;
-using SimpleToDoList;
+//using SimpleToDoList;
 
 namespace AA.Desktop;
 
