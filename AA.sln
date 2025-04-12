@@ -26,6 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "안드로이드앱 작성�
 		안드로이드앱 작성법\03. 프로젝트 종속성 확인.txt = 안드로이드앱 작성법\03. 프로젝트 종속성 확인.txt
 		안드로이드앱 작성법\04. 프로젝트명 수정방법.txt = 안드로이드앱 작성법\04. 프로젝트명 수정방법.txt
 		안드로이드앱 작성법\05. ViewModelLocator 불필요성.txt = 안드로이드앱 작성법\05. ViewModelLocator 불필요성.txt
+		안드로이드앱 작성법\06. 주요 필수 패키지.txt = 안드로이드앱 작성법\06. 주요 필수 패키지.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleToDoList", "SimpleToDoList\SimpleToDoList.csproj", "{CF786975-19FD-4ED8-8193-FEAC5AE9D5C2}"

@@ -1,0 +1,6 @@
+
+# dotnet - net8.0
+# avalonia - 11.1.0
+# communitytoolkit - 8.2.0
+# fluentaavaloniaui - 2.1.0
+# Microsoft.Extensions.DependencyInjection - 9.0.0
