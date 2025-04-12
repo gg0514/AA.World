@@ -24,7 +24,7 @@ class Program
 
     // Avalonia configuration, don't remove; also used by visual designer.
     public static AppBuilder BuildAvaloniaApp()
-        => AppBuilder.Configure<ViewModelLocator.App>()
+        => AppBuilder.Configure<AAva.App>()
             .UsePlatformDetect()
             .WithInterFont()
             .LogToTrace();
